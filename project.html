@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trend | Shopify Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Product Section -->
+        <div class="product-section">
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <div class="thumbnails" id="thumbnails">
+                    <div class="thumbnail active" data-index="0">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Product 1">
+                    </div>
+                    <div class="thumbnail" data-index="1">
+                        <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" alt="Product 2">
+                    </div>
+                    <div class="thumbnail" data-index="2">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400" alt="Product 3">
+                    </div>
+                    <div class="thumbnail" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1622445275576-721325763afe?w=400" alt="Product 4">
+                    </div>
+                    <div class="thumbnail" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400" alt="Product 5">
+                    </div>
+                    <div class="thumbnail" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=400" alt="Product 6">
+                    </div>
+                </div>
+                <div class="main-image-container">
+                    <img id="mainImage" class="main-image" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800" alt="Premium Cotton T-Shirt">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1>Premium Cotton T-Shirt</h1>
+                <div class="price">$49.99</div>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>(127 reviews)</span>
+                </div>
+                <p class="product-description">
+                    Experience ultimate comfort with our premium cotton t-shirt. Made from 100% organic cotton, this versatile piece features a modern fit and exceptional quality that gets softer with every wash.
+                </p>
+
+                <!-- Color Selection -->
+                <div class="option-group">
+                    <div class="option-label">
+                        <span>Color: <strong id="selectedColor">Black</strong></span>
+                        <button class="btn-link" id="compareColorsBtn">Compare Colors</button>
+                    </div>
+                    <div class="color-swatches" id="colorSwatches">
+                        <div class="color-swatch active" data-color="Black" style="background: #000;"></div>
+                        <div class="color-swatch" data-color="White" style="background: #fff; border: 2px solid #ddd;"></div>
+                        <div class="color-swatch" data-color="Navy" style="background: #1e3a8a;"></div>
+                        <div class="color-swatch" data-color="Gray" style="background: #6b7280;"></div>
+                        <div class="color-swatch" data-color="Olive" style="background: #6b7247;"></div>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="option-group">
+                    <div class="option-label">
+                        <span>Size: <strong id="selectedSize">M</strong></span>
+                        <button class="btn-link" id="sizeChartBtn">Size Chart</button>
+                    </div>
+                    <div class="size-options" id="sizeOptions">
+                        <button class="size-btn" data-size="XS">XS</button>
+                        <button class="size-btn" data-size="S">S</button>
+                        <button class="size-btn active" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-secondary">Buy Now</button>
+                </div>
+
+                <!-- Additional Info -->
+                <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;">
+                    <p style="margin-bottom: 10px;">✓ Free shipping on orders over $100</p>
+                    <p style="margin-bottom: 10px;">✓ Easy 30-day returns</p>
+                    <p>✓ Secure checkout</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Bundle -->
+        <div class="product-bundle">
+            <div class="bundle-header">Frequently Bought Together</div>
+            <div class="bundle-items">
+                <div class="bundle-item">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300" alt="T-Shirt">
+                    <div style="font-weight: 600;">Premium T-Shirt</div>
+                    <div style="color: #666;">$49.99</div>
+                </div>
+                <div class="bundle-plus">+</div>
+                <div class="bundle-item">
+                    <img src="https://urbanunited.in/cdn/shop/files/UUUU5430.jpg?v=1700128436" alt="Jeans">
+                    <div style="font-weight: 600;">Classic Denim Jeans</div>
+                    <div style="color: #666;">$89.99</div>
+                </div>
+                <div class="bundle-plus">+</div>
+                <div class="bundle-item">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=300" alt="Watch">
+                    <div style="font-weight: 600;">Leather Watch</div>
+                    <div style="color: #666;">$129.99</div>
+                </div>
+            </div>
+            <div class="bundle-pricing">
+                <div>
+                    <div class="bundle-price">Total: $269.97</div>
+                    <div class="bundle-savings">Save $40 when bought together</div>
+                </div>
+                <button class="btn btn-primary">Add Bundle to Cart</button>
+            </div>
+        </div>
+
+        <!-- Pair Well With -->
+        <div class="pair-well-section">
+            <div class="section-title">Pair Well With</div>
+            <div class="product-carousel">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500" alt="Slim Fit Jeans">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Slim Fit Jeans</div>
+                        <div class="product-card-price">$89.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500" alt="Leather Sneakers">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Leather Sneakers</div>
+                        <div class="product-card-price">$129.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500" alt="Canvas Backpack">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Canvas Backpack</div>
+                        <div class="product-card-price">$79.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20231025/Vo3G/65384572ddf779151955fd90/-473Wx593H-466743192-black-MODEL.jpg" alt="Denim Jacket">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Denim Jacket</div>
+                        <div class="product-card-price">$119.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=500" alt="Baseball Cap">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Baseball Cap</div>
+                        <div class="product-card-price">$34.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Info Tabs -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <div class="tab active" data-tab="description">Description</div>
+                <div class="tab" data-tab="info">Product Information</div>
+                <div class="tab" data-tab="shipping">Shipping Details</div>
+            </div>
+            <div class="tab-content active" id="description">
+                <h3 style="margin-bottom: 15px;">Product Description</h3>
+                <p style="margin-bottom: 15px;">Our Premium Cotton T-Shirt is the perfect addition to any wardrobe. Crafted from 100% organic cotton, this t-shirt offers unparalleled comfort and breathability.</p>
+                <p style="margin-bottom: 15px;">The modern fit is designed to flatter all body types while providing freedom of movement. Whether you're dressing up or keeping it casual, this versatile piece works for any occasion.</p>
+                <p>Features include reinforced stitching, a ribbed crew neck, and a relaxed fit that gets softer with every wash. Available in multiple colors to suit your style.</p>
+            </div>
+            <div class="tab-content" id="info">
+                <h3 style="margin-bottom: 15px;">Product Information</h3>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><strong>Material:</strong> 100% Organic Cotton</li>
+                    <li><strong>Weight:</strong> 180 GSM</li>
+                    <li><strong>Fit:</strong> Modern Relaxed Fit</li>
+                    <li><strong>Care:</strong> Machine wash cold, tumble dry low</li>
+                    <li><strong>Origin:</strong> Made in Portugal</li>
+                    <li><strong>Sustainability:</strong> GOTS Certified Organic Cotton</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="shipping">
+                <h3 style="margin-bottom: 15px;">Shipping Details</h3>
+                <p style="margin-bottom: 15px;"><strong>Standard Shipping:</strong> 5-7 business days - Free on orders over $100</p>
+                <p style="margin-bottom: 15px;"><strong>Express Shipping:</strong> 2-3 business days - $15.99</p>
+                <p style="margin-bottom: 15px;"><strong>Next Day Delivery:</strong> Order before 2 PM - $29.99</p>
+                <p style="margin-bottom: 15px;"><strong>Returns:</strong> Free 30-day returns. Items must be unworn with tags attached.</p>
+                <p><strong>International Shipping:</strong> Available to most countries. Rates calculated at checkout.</p>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <div class="section-title">You May Also Like</div>
+            <div class="products-grid">
+                <div class="product-card" style="position: relative;">
+                    <span class="badge new">New</span>
+                    <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500" alt="Crewneck Sweater">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Merino Wool Sweater</div>
+                        <div class="product-card-price">$149.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" style="position: relative;">
+                    <span class="badge popular">Popular</span>
+                    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500" alt="Henley Shirt">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Long Sleeve Henley</div>
+                        <div class="product-card-price">$59.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=500" alt="Polo Shirt">
+                    <div class="product-card-info">
+                        <div class="product-card-title">Classic Polo Shirt</div>
+                        <div class="product-card-price">$69.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" style="position: relative;">
+                    <span class="badge">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500" alt="V-Neck T-Shirt">
+                    <div class="product-card-info">
+                        <div class="product-card-title">V-Neck T-Shirt</div>
+                        <div class="product-card-price">$39.99</div>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="sizeChartModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeSizeChart">&times;</button>
+            <h2 style="margin-bottom: 20px;">Size Chart</h2>
+            <p style="margin-bottom: 20px; color: #666;">All measurements are in inches. For best results, measure yourself and compare to the chart below.</p>
+            <table class="size-chart-table">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Chest</th>
+                        <th>Length</th>
+                        <th>Shoulder</th>
+                        <th>Sleeve</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>XS</strong></td>
+                        <td>34-36"</td>
+                        <td>27"</td>
+                        <td>16"</td>
+                        <td>8"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>S</strong></td>
+                        <td>36-38"</td>
+                        <td>28"</td>
+                        <td>17"</td>
+                        <td>8.5"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>M</strong></td>
+                        <td>38-40"</td>
+                        <td>29"</td>
+                        <td>18"</td>
+                        <td>9"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>L</strong></td>
+                        <td>40-42"</td>
+                        <td>30"</td>
+                        <td>19"</td>
+                        <td>9.5"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>XL</strong></td>
+                        <td>42-44"</td>
+                        <td>31"</td>
+                        <td>20"</td>
+                        <td>10"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>XXL</strong></td>
+                        <td>44-46"</td>
+                        <td>32"</td>
+                        <td>21"</td>
+                        <td>10.5"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 6px;">
+                <strong>How to Measure:</strong>
+                <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Chest:</strong> Measure around the fullest part of your chest</li>
+                    <li><strong>Length:</strong> Measure from the highest point of the shoulder to the hem</li>
+                    <li><strong>Shoulder:</strong> Measure from shoulder seam to shoulder seam</li>
+                    <li><strong>Sleeve:</strong> Measure from the shoulder seam to the cuff</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal" id="compareColorsModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeCompareColors">&times;</button>
+            <h2 style="margin-bottom: 10px;">Compare Colors</h2>
+            <p style="margin-bottom: 20px; color: #666;">Click on colors to select them for comparison (select 2 or more)</p>
+            
+            <!-- Selected Colors Comparison Area -->
+            <div id="selectedComparison" style="display: none; margin-bottom: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+                <h3 style="margin-bottom: 15px; font-size: 18px;">Your Comparison</h3>
+                <div id="comparisonDisplay" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;"></div>
+            </div>
+
+            <!-- All Available Colors -->
+            <div class="color-comparison">
+                <div class="color-compare-item" data-compare-color="Black" data-bg="#000" data-desc="Classic & Versatile">
+                    <div class="color-compare-swatch" style="background: #000;"></div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">Black</div>
+                    <div style="font-size: 14px; color: #666;">Classic & Versatile</div>
+                    <div class="selection-indicator" style="margin-top: 8px; font-size: 12px; color: #28a745; font-weight: 600; opacity: 0;">✓ Selected</div>
+                </div>
+                <div class="color-compare-item" data-compare-color="White" data-bg="#fff" data-desc="Clean & Fresh" data-border="true">
+                    <div class="color-compare-swatch" style="background: #fff; border: 2px solid #ddd;"></div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">White</div>
+                    <div style="font-size: 14px; color: #666;">Clean & Fresh</div>
+                    <div class="selection-indicator" style="margin-top: 8px; font-size: 12px; color: #28a745; font-weight: 600; opacity: 0;">✓ Selected</div>
+                </div>
+                <div class="color-compare-item" data-compare-color="Navy" data-bg="#1e3a8a" data-desc="Professional">
+                    <div class="color-compare-swatch" style="background: #1e3a8a;"></div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">Navy</div>
+                    <div style="font-size: 14px; color: #666;">Professional</div>
+                    <div class="selection-indicator" style="margin-top: 8px; font-size: 12px; color: #28a745; font-weight: 600; opacity: 0;">✓ Selected</div>
+                </div>
+                <div class="color-compare-item" data-compare-color="Gray" data-bg="#6b7280" data-desc="Modern & Neutral">
+                    <div class="color-compare-swatch" style="background: #6b7280;"></div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">Gray</div>
+                    <div style="font-size: 14px; color: #666;">Modern & Neutral</div>
+                    <div class="selection-indicator" style="margin-top: 8px; font-size: 12px; color: #28a745; font-weight: 600; opacity: 0;">✓ Selected</div>
+                </div>
+                <div class="color-compare-item" data-compare-color="Olive" data-bg="#6b7247" data-desc="Earthy & Unique">
+                    <div class="color-compare-swatch" style="background: #6b7247;"></div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">Olive</div>
+                    <div style="font-size: 14px; color: #666;">Earthy & Unique</div>
+                    <div class="selection-indicator" style="margin-top: 8px; font-size: 12px; color: #28a745; font-weight: 600; opacity: 0;">✓ Selected</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Compare Popup -->
+    <div class="quick-compare-popup" id="quickComparePopup">
+        <div class="quick-compare-header">
+            <h3>Color Comparison</h3>
+            <button class="quick-compare-close" id="closeQuickCompare">&times;</button>
+        </div>
+        <div class="quick-compare-colors" id="quickCompareColors">
+            <!-- Colors will be dynamically added here -->
+        </div>
+        <div class="quick-compare-actions">
+            <button class="btn btn-secondary" style="flex: 1; font-size: 14px; padding: 10px;" id="viewAllColorsBtn">View All Colors</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
