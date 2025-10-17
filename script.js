@@ -173,6 +173,31 @@
             }
         });
 
+
+
+
+
+const mainImageContainer = document.querySelector('.main-image-container');
+
+mainImageContainer.addEventListener('mousemove', (e) => {
+    const { left, top, width, height } = mainImageContainer.getBoundingClientRect();
+    const x = ((e.pageX - left) / width) * 100;
+    const y = ((e.pageY - top) / height) * 100;
+    mainImage.style.transformOrigin = `${x}% ${y}%`;
+    mainImage.style.transform = 'scale(2)'; // zoom level
+});
+
+mainImageContainer.addEventListener('mouseleave', () => {
+    mainImage.style.transformOrigin = 'center center';
+    mainImage.style.transform = 'scale(1)';
+});
+
+
+
+
+
+
+
         // Compare Colors - Quick Popup Feature
         const compareColorsBtn = document.getElementById('compareColorsBtn');
         const quickComparePopup = document.getElementById('quickComparePopup');
