@@ -1,78 +1,107 @@
-# Global Trend Assignment
+# Shopify-Style Product Page
 
-Overview
---------
-Global Trend Assignment is a simple front-end project that visualizes global trend data (charts, tables, or interactive UI) using plain HTML, CSS, and JavaScript. The project is intended as a small demo/assignment that is easy to run locally without any build tools.
+## Overview
 
-Features implemented
---------------------
-- Responsive layout using CSS
-- Interactive charts or visualizations (if included in js/)
-- Client-side data fetching and rendering (from local JSON or provided APIs)
-- Clean separation of structure (index.html), styles (css/), and behavior (js/)
-- Static assets organized in assets/ (images, fonts, data)
+This project is a **fully responsive, vanilla HTML/CSS/JS product page** designed to mimic the layout and features of modern Shopify storefronts. It demonstrates interactive product galleries, variant selection, modals, tabs, product bundles, and related product recommendations.  
 
-How to run locally
-------------------
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Nsanjayboruds/Global-Trend-assisgnment.git
-   cd Global-Trend-assisgnment
-   ```
+## Features Implemented
 
-2. Open directly in the browser:
-   - Double-click `index.html` or open it from your browser: `file:///path/to/Global-Trend-assisgnment/index.html`
-   - Note: Some browsers block local AJAX (fetch) requests from file://. If the app requests local JSON data, run a simple HTTP server instead.
+- **Scrollable Product Images Gallery**  
+  - Main image with clickable thumbnails.  
+  - Scrollable thumbnails for multiple images.  
 
-3. Run a simple local HTTP server (recommended):
-   - Using Python 3:
-     ```bash
-     python3 -m http.server 8000
-     # then open http://localhost:8000 in your browser
-     ```
-   - Using Node (http-server):
-     ```bash
-     npx http-server -p 8000
-     # then open http://localhost:8000
-     ```
-   - Using VSCode Live Server extension:
-     - Install Live Server extension.
-     - Right-click `index.html` → "Open with Live Server".
+- **Size Chart Modal**  
+  - "Size Chart" button opens a dismissible modal with sample size data.  
 
-4. Development tips:
-   - Edit files in `css/` and `js/`, then refresh the browser.
-   - If using external APIs, ensure CORS is configured or use a local proxy.
+- **Product Variants**  
+  - Color swatches and size dropdown options.  
+  - Updates visible product state when selected.  
 
-Folder structure
-----------------
-Project root should include these files/folders:
+- **Compare Colours Modal**  
+  - Opens a popup to visually compare selected colors.  
 
-- index.html
-  - The entry point of the app. Loads styles and scripts and contains the main markup.
-- css/
-  - Contains all stylesheet files (e.g., `styles.css`, `responsive.css`).
-- js/
-  - Contains JavaScript source files (e.g., `app.js`, `charts.js`, `utils.js`).
-- assets/
-  - Static assets such as images, fonts, and sample data (e.g., `images/`, `fonts/`, `data/`).
+- **Pair Well With Section**  
+  - Horizontal scrollable carousel of complementary products.  
 
-Example tree:
-```
-Global-Trend-assisgnment/
-├─ index.html 
-├─ styles.css
-|_script.js
+- **Product Bundle Suggestion**  
+  - Shows product bundles with individual and total pricing.  
+  - "Add Bundle to Cart" button included.  
 
-```
+- **Product Info Tabs**  
+  - Description, Product Information, and Shipping Details.  
+  - Content toggled via pure JavaScript.  
 
-Notes
------
-- No build tools are required; this is a static front-end project.
-- If you want, I can:
-  - Add this README directly to the repository and open a PR.
-  - Expand the README with screenshots, live demo link, or contribution guidelines.
-  - Detect repository files and tailor the README to match actual filenames in your repo.
+- **Related Products Section**  
+  - Grid of 4 related products with images, name, price, and badges.  
 
-Author
-------
-Nsanjayboruds
+- **Responsive Design**  
+  - Works on mobile, tablet, and desktop.  
+
+- **Bonus Features (Optional)**  
+  - Image zoom on hover.  
+  - Micro-interactions with transitions and hover effects.  
+  - Persistent selected variant using `localStorage`.  
+
+## How to Run Locally
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/yourusername/shopify-product-page.git
+
+````
+2 Navigate to the project folder:
+``````````
+cd shopify-product-page
+``````````
+3.Open index.html in a browser:
+```````
+OPEN LIVE SERVER
+`````````````
+
+
+📁Folder Structure:-
+````````
+shopify-product-page/
+├── index.html           # Main HTML file
+├── css/
+│   └── style.css        # Styles for the project
+├── js/
+   └── script.js        # JavaScript for interactivity
+```````````
+
+Technologies Used
+
+HTML5
+
+CSS3 (Flexbox & Grid for layout)
+
+Vanilla JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
