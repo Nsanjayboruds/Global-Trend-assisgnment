@@ -67,7 +67,12 @@ shopify-product-page/
 ├── css/
 │   └── style.css        # Styles for the project
 ├── js/
-   └── script.js        # JavaScript for interactivity
+│   └── script.js        # JavaScript for interactivity
+└── img/              # Images and other assets
+    ├── product1.jpg
+    ├── product2.jpg
+    └── ... other images
+
 ```````````
 
 Technologies Used
