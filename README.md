@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a **fully responsive, vanilla HTML/CSS/JS product page** designed to mimic the layout and features of modern Shopify storefronts. It demonstrates interactive product galleries, variant selection, modals, tabs, product bundles, and related product recommendations.  
+This project is a **fully responsive, vanilla HTML/CSS/JS product page** designed to mimic the layout and features of modern Shopify storefronts. It demonstrates interactive product galleries, variant selection, modals, tabs, product bundles, and related product recommendations.   
 
 ## Features Implemented
 
